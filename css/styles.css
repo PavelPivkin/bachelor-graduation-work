@@ -1,0 +1,15 @@
+.menu {
+	width: 16%;
+	margin-top:1%;
+}
+	.menu_left {
+		float: left;
+	}
+
+.main {
+	width: 84%;
+	float: left;
+	margin-top: -20px;
+	padding: 50px;
+}
+
