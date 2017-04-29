@@ -1,0 +1,472 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<obj name="Нормативно-справочная информация (ВПО)">
+  <obj name="Страны мира (основные показатели)">
+    <obj name="Республика Армения">
+      <p name="Дата независимости" type="TEXT" value="28.05.1918"/>
+      <p name="Официальный язык" type="TEXT" value="армянский"/>
+      <p name="Столица" type="TEXT" value="Ереван"/>
+      <p name="Крупнейшие города" type="TEXT" value="Ереван, Гюмри, Ванадзор"/>
+      <p name="Форма правления" type="TEXT" value="Республика"/>
+      <p name="Президент" type="TEXT" value="Серж Саргсян"/>
+      <p name="Премьер-министр" type="TEXT" value="Овик Абраамян"/>
+      <p name="Территория" type="INT" value="2"/>
+      <p name="Население" type="INT" value="2"/>
+      <p name="Плотность нас." type="INT" value="101"/>
+      <p name="ВВП" type="INT" value="6"/>
+      <p name="ИЧР" type="REAL" value="0,733"/>
+      <p name="Названия жителей" type="TEXT" value="армянин, армянка, армяне"/>
+      <p name="Валюта" type="TEXT" value="армянский драм"/>
+      <p name="Интернет-домен" type="TEXT" value=".am"/>
+      <p name="Код ISO" type="TEXT" value="AM"/>
+      <p name="Код МОК" type="TEXT" value="ARM"/>
+      <p name="Телефонный код" type="TEXT" value="+374"/>
+      <p name="Часовые пояса" type="TEXT" value="UTC+4"/>
+      <p name="Гимн" type="TEXT" value=" «Наше Отечество»"/>
+    </obj>
+    <obj name="Азербайджанская Республика">
+      <p name="Дата независимости" type="TEXT" value="28.05.1918"/>
+      <p name="Официальный язык" type="TEXT" value="азербайджанский"/>
+      <p name="Столица" type="TEXT" value=" Баку"/>
+      <p name="Крупнейшие города" type="TEXT" value="Баку, Гянджа, Сумгаит, Мингечаур, Хырдалан, Ленкорань, Нахичевань, Ширван, Ханкенди"/>
+      <p name="Форма правления" type="TEXT" value="президентская республика"/>
+      <p name="Президент" type="TEXT" value="Ильхам Алиев"/>
+      <p name="Премьер-министр" type="TEXT" value="Артур Расизаде"/>
+      <p name="Госрелигия" type="TEXT" value="светское государство"/>
+      <p name="Территория" type="INT" value="8"/>
+      <p name="Население" type="INT" value="9"/>
+      <p name="Плотность нас." type="INT" value="111"/>
+      <p name="ВВП" type="INT" value="17"/>
+      <p name="ИЧР" type="REAL" value="0,751"/>
+      <p name="Валюта" type="TEXT" value="азербайджанский манат"/>
+      <p name="Интернет-домен" type="TEXT" value=".az"/>
+      <p name="Код ISO" type="TEXT" value="AZ"/>
+      <p name="Код МОК" type="TEXT" value="AZE"/>
+      <p name="Телефонный код" type="TEXT" value="+994"/>
+      <p name="Часовые пояса" type="TEXT" value="+4"/>
+      <p name="Девиз" type="TEXT" value=" «Odlar Yurdu»«Страна Огней»"/>
+      <p name="Гимн" type="TEXT" value=" «Azərbaycan Marşı»"/>
+    </obj>
+
+    <obj name="Республика Беларусь">
+      <p name="Дата независимости" type="TEXT" value="26.12.1991"/>
+      <p name="Официальные языки" type="TEXT" value="белорусский, русский"/>
+      <p name="Столица" type="TEXT" value=" Минск"/>
+      <p name="Крупнейшие города" type="TEXT" value="Минск, Гомель, Могилёв, Витебск, Гродно, Брест"/>
+      <p name="Форма правления" type="TEXT" value="президентская республика"/>
+      <p name="Президент" type="TEXT" value="Александр Лукашенко"/>
+      <p name="Премьер-министр" type="TEXT" value="Андрей Кобяков"/>
+      <p name="Территория" type="INT" value="20"/>
+      <p name="Население" type="INT" value="9"/>
+      <p name="Плотность нас." type="INT" value="45"/>
+      <p name="ВВП" type="INT" value="17"/>
+      <p name="ИЧР" type="REAL" value="0,798"/>
+      <p name="Названия жителей" type="TEXT" value="белорус, белоруска, белорусы"/>
+      <p name="Валюта" type="TEXT" value="белорусский рубль"/>
+      <p name="Интернет-домен" type="TEXT" value=".by и .бел"/>
+      <p name="Код ISO" type="TEXT" value="BY"/>
+      <p name="Код МОК" type="TEXT" value="BLR"/>
+      <p name="Телефонный код" type="TEXT" value="+375"/>
+      <p name="Часовые пояса" type="TEXT" value="UTC+03:00"/>
+      <p name="Гимн" type="TEXT" value=" «Мы, белорусы»"/>
+    </obj>
+    <obj name="Соединённое Королевство Великобритании и Северной Ирландии">
+      <p name="Официальный язык" type="TEXT" value="английский"/>
+      <p name="Столица" type="TEXT" value="Лондон"/>
+      <p name="Крупнейшие города" type="TEXT" value="Лондон, Бирмингем, Лидс, Глазго, Белфаст, Манчестер, Эдинбург"/>
+      <p name="Форма правления" type="TEXT" value="парламентарная монархия"/>
+      <p name="Королева" type="TEXT" value="Елизавета II"/>
+      <p name="Премьер-министр" type="TEXT" value="Тереза Мэй"/>
+      <p name="Территория" type="INT" value="24"/>
+      <p name="Население" type="INT" value="63"/>
+      <p name="Плотность нас." type="INT" value="246"/>
+      <p name="ВВП" type="INT" value="34"/>
+      <p name="ИЧР" type="REAL" value="0,892"/>
+      <p name="Валюта" type="TEXT" value="фунт стерлингов"/>
+      <p name="Интернет-домены" type="TEXT" value=".uk, .eu (как член ЕС)"/>
+      <p name="Код ISO" type="TEXT" value="GB"/>
+      <p name="Код МОК" type="TEXT" value="GBR"/>
+      <p name="Телефонный код" type="TEXT" value="+44"/>
+      <p name="Часовые пояса" type="TEXT" value="UTC±00:00"/>
+      <p name="Девиз" type="TEXT" value=" «Dieu et mon droit» «(Бог и моё право)»"/>
+    </obj>
+
+    <obj name="Канада">
+      <p name="Дата независимости" type="TEXT" value="01.07.1867"/>
+      <p name="Официальные языки" type="TEXT" value="английский, французский"/>
+      <p name="Столица" type="TEXT" value="Оттава "/>
+      <p name="Крупнейшие города" type="TEXT" value="Торонто, Монреаль, Калгари, Оттава, Ванкувер, Эдмонтон"/>
+      <p name="Форма правления" type="TEXT" value="парламентарная монархия"/>
+      <p name="Королева" type="TEXT" value="Елизавета II"/>
+      <p name="Генерал-губернатор" type="TEXT" value="Дэвид Джонстон"/>
+      <p name="Премьер-министр" type="TEXT" value="Джастин Трюдо"/>
+      <p name="Территория" type="INT" value="998"/>
+      <p name="Население" type="INT" value="36"/>
+      <p name="Плотность нас." type="INT" value="3"/>
+      <p name="ИЧР" type="REAL" value="0,902"/>
+      <p name="Названия жителей" type="TEXT" value="кана́дцы, кана́дец, кана́дка"/>
+      <p name="Валюта" type="TEXT" value="канадский доллар"/>
+      <p name="Интернет-домен" type="TEXT" value=".ca"/>
+      <p name="Код ISO" type="TEXT" value="CA"/>
+      <p name="Код МОК" type="TEXT" value="CAN"/>
+      <p name="Телефонный код" type="TEXT" value="+1"/>
+      <p name="Часовые пояса" type="TEXT" value="−3:30 — −8"/>
+      <p name="Девиз" type="TEXT" value=" «A mari usque ad mare» —«От моря до моря»"/>
+      <p name="Гимн" type="TEXT" value=" «O Canada!»"/>
+    </obj>
+    <obj name="Чехия">
+      <p name="Дата независимости" type="TEXT" value="01.01.1993"/>
+      <p name="Официальный язык" type="TEXT" value="чешский"/>
+      <p name="Столица" type="TEXT" value=" Прага"/>
+      <p name="Крупнейшие города" type="TEXT" value="Прага, Брно, Острава, Пльзень"/>
+      <p name="Форма правления" type="TEXT" value="Парламентская республика"/>
+      <p name="Президент" type="TEXT" value="Милош Земан"/>
+      <p name="Премьер-министр" type="TEXT" value="Богуслав Соботка"/>
+      <p name="Территория" type="INT" value="7"/>
+      <p name="Население" type="INT" value="10"/>
+      <p name="Плотность нас." type="INT" value="133"/>
+      <p name="ВВП" type="INT" value="17"/>
+      <p name="ИЧР" type="REAL" value="0,861"/>
+      <p name="Названия жителей" type="TEXT" value="чех, чешка, чехи"/>
+      <p name="Валюта" type="TEXT" value="Чешская крона"/>
+      <p name="Интернет-домен" type="TEXT" value=".cz"/>
+      <p name="Код ISO" type="TEXT" value="CZ"/>
+      <p name="Код МОК" type="TEXT" value="CZE"/>
+      <p name="Телефонный код" type="TEXT" value="+420"/>
+      <p name="Часовые пояса" type="TEXT" value="CET (UTC+1, летом UTC+2)"/>
+      <p name="Девиз" type="TEXT" value=" «Pravda vítězí» —«Истина торжествует»"/>
+      <p name="Гимн" type="TEXT" value=" «Kde domov můj?» —«Где мой дом?»"/>
+    </obj>
+    <obj name="Королевство Дания">
+      <p name="Официальный язык" type="TEXT" value="датский"/>
+      <p name="Столица" type="TEXT" value="Копенгаген"/>
+      <p name="Крупнейшие города" type="TEXT" value="Копенгаген, Орхус, Оденсе"/>
+      <p name="Форма правления" type="TEXT" value="Конституционная монархия"/>
+      <p name="Монарх" type="TEXT" value="Маргрете II"/>
+      <p name="Премьер-министр" type="TEXT" value="Ларс Лёкке Расмуссен"/>
+      <p name="Госрелигия" type="TEXT" value="Лютеранство"/>
+      <p name="Территория" type="INT" value="4"/>
+      <p name="Население" type="INT" value="5"/>
+      <p name="Плотность нас." type="INT" value="126"/>
+      <p name="ВВП" type="INT" value="36"/>
+      <p name="ИЧР" type="REAL" value="0,923"/>
+      <p name="Названия жителей" type="TEXT" value="датчанин, датчанка, датчане"/>
+      <p name="Валюта" type="TEXT" value="датская крона"/>
+      <p name="Интернет-домен" type="TEXT" value=".dk"/>
+      <p name="Код ISO" type="TEXT" value="DK"/>
+      <p name="Код МОК" type="TEXT" value="DEN"/>
+      <p name="Телефонный код" type="TEXT" value="+45"/>
+      <p name="Часовые пояса" type="TEXT" value="CET (UTC+1, летом UTC+2)"/>
+      <p name="Девиз" type="TEXT" value="«Guds hjælp, Folkets kærlighed, Danmarks styrke[1]»«Помощь Господа, любовь народа, сила Дании»"/>
+      <p name="Гимн" type="TEXT" value=" «Der er et yndigt land»"/>
+    </obj>
+
+    <obj name="Эстонская Республика">
+      <p name="Официальные языки" type="TEXT" value="эстонский язык"/>
+      <p name="Столица" type="TEXT" value="Таллин"/>
+      <p name="Крупнейшие города" type="TEXT" value="Таллин, Тарту, Нарва, Пярну, Кохтла-Ярве"/>
+      <p name="Форма правления" type="TEXT" value="парламентская республика"/>
+      <p name="Территория" type="INT" value="4"/>
+      <p name="Население" type="INT" value="1"/>
+      <p name="Плотность нас." type="INT" value="29"/>
+      <p name="ВВП" type="INT" value="25"/>
+      <p name="ИЧР" type="REAL" value="0,846"/>
+      <p name="Названия жителей" type="TEXT" value="эстонец, эстонка, эстонцы"/>
+      <p name="Валюта" type="TEXT" value="евро"/>
+      <p name="Интернет-домены" type="TEXT" value=".ee, .eu"/>
+      <p name="Код ISO" type="TEXT" value="EE"/>
+      <p name="Код МОК" type="TEXT" value="EST"/>
+      <p name="Телефонный код" type="TEXT" value="+372"/>
+      <p name="Часовые пояса" type="TEXT" value="EET (UTC+2, летом — UTC+3)"/>
+      <p name="Гимн" type="TEXT" value=" «Mu isamaa, mu õnn ja rõõm (Моя родина, моё счастье и радость)»"/>
+    </obj>
+    <obj name="Финляндская Республика">
+      <p name="Дата независимости" type="TEXT" value="06.12.1917"/>
+      <p name="Официальные языки" type="TEXT" value="финский, шведский"/>
+      <p name="Столица" type="TEXT" value=" Хельсинки"/>
+      <p name="Крупнейшие города" type="TEXT" value="Хельсинки, Эспоо, Тампере, Вантаа, Турку"/>
+      <p name="Форма правления" type="TEXT" value="парламентско-президентская республика"/>
+      <p name="Президент" type="TEXT" value="Саули Нийнистё"/>
+      <p name="Премьер-министр" type="TEXT" value="Юха Сипиля"/>
+      <p name="Спикер парламента" type="TEXT" value="Мария Лохела"/>
+      <p name="Госрелигия" type="TEXT" value="лютеранство, православие (де-факто)"/>
+      <p name="Территория" type="INT" value="33"/>
+      <p name="Население" type="INT" value="5"/>
+      <p name="Плотность нас." type="INT" value="16"/>
+      <p name="ВВП" type="INT" value="34"/>
+      <p name="ИЧР" type="REAL" value="0,892"/>
+      <p name="Названия жителей" type="TEXT" value="финны, финн и финка; ранее (по Ушакову) — финляндцы, финляндец и финляндка"/>
+      <p name="Валюта" type="TEXT" value="евро"/>
+      <p name="Интернет-домены" type="TEXT" value=".fi, .ax (для Аландских островов)"/>
+      <p name="Код ISO" type="TEXT" value="FI"/>
+      <p name="Код МОК" type="TEXT" value="FIN"/>
+      <p name="Телефонный код" type="TEXT" value="+358"/>
+      <p name="Часовые пояса" type="TEXT" value="EET (UTC+2, летом — UTC+3)"/>
+      <p name="Гимн" type="TEXT" value=" «Maamme / Vårt land»"/>
+    </obj>
+
+    <obj name="Французская Республика">
+      <p name="Официальный язык" type="TEXT" value="французский"/>
+      <p name="Столица" type="TEXT" value="Париж"/>
+      <p name="Крупнейшие города" type="TEXT" value="Париж, Марсель, Лион, Тулуза, Ницца"/>
+      <p name="Форма правления" type="TEXT" value="президентско-парламентская республика"/>
+      <p name="Президент" type="TEXT" value="Франсуа Олланд"/>
+      <p name="Премьер-министр" type="TEXT" value="Мануэль Вальс"/>
+      <p name="Госрелигия" type="TEXT" value="Светское государство"/>
+      <p name="Территория" type="INT" value="67"/>
+      <p name="Население" type="INT" value="66"/>
+      <p name="Плотность нас." type="INT" value="116"/>
+      <p name="ВВП" type="INT" value="43"/>
+      <p name="ИЧР" type="REAL" value="0,884"/>
+      <p name="Названия жителей" type="TEXT" value="француз, француженка, французы"/>
+      <p name="Валюта" type="TEXT" value="евро"/>
+      <p name="Интернет-домен" type="TEXT" value=".fr"/>
+      <p name="Код ISO" type="TEXT" value="FR"/>
+      <p name="Код МОК" type="TEXT" value="FRA"/>
+      <p name="Телефонный код" type="TEXT" value="+33"/>
+      <p name="Часовые пояса" type="TEXT" value="CET (UTC+1, летом UTC+2)"/>
+      <p name="Девиз" type="TEXT" value=" «Liberté, Égalité, Fraternité (Свобода, Равенство, Братство)»"/>
+      <p name="Гимн" type="TEXT" value=" «Марсельеза»"/>
+    </obj>
+
+    <obj name="Федеративная Республика Германия">
+      <p name="Официальный язык" type="TEXT" value="немецкий"/>
+      <p name="Столица" type="TEXT" value=" Берлин"/>
+      <p name="Крупнейшие города" type="TEXT" value="Берлин, Гамбург, Мюнхен, Кёльн, Франкфурт-на-Майне, Штутгарт, Дюссельдорф, Дортмунд, Эссен, Лейпциг, Бремен"/>
+      <p name="Форма правления" type="TEXT" value="парламентская республика"/>
+      <p name="Территория" type="INT" value="35"/>
+      <p name="Население" type="INT" value="82"/>
+      <p name="Плотность нас." type="INT" value="227"/>
+      <p name="ВВП" type="INT" value="46"/>
+      <p name="ИЧР" type="REAL" value="0,911"/>
+      <p name="Названия жителей" type="TEXT" value="немец, немка, немцы, германцы, германка, германец"/>
+      <p name="Валюта" type="TEXT" value="евро"/>
+      <p name="Интернет-домен" type="TEXT" value=".de"/>
+      <p name="Код ISO" type="TEXT" value="DE"/>
+      <p name="Код МОК" type="TEXT" value="GER"/>
+      <p name="Телефонный код" type="TEXT" value="+49"/>
+      <p name="Часовые пояса" type="TEXT" value="CET (UTC+1, летом UTC+2)"/>
+      <p name="Девиз" type="TEXT" value=" «Единство, право и свобода»нем. «Einigkeit und Recht und Freiheit»"/>
+      <p name="Гимн" type="TEXT" value=" «Третья строфа «Песни немцев»[1]» "/>
+    </obj>
+    <obj name="Исламская Республика Иран">
+      <p name="Официальный язык" type="TEXT" value="персидский"/>
+      <p name="Столица" type="TEXT" value="Тегеран"/>
+      <p name="Крупнейшие города" type="TEXT" value="Тегеран, Мешхед, Кередж, Тебриз, Шираз, Исфахан, Ахваз"/>
+      <p name="Форма правления" type="TEXT" value="исламская республика"/>
+      <p name="Высший руководитель" type="TEXT" value="Али Хаменеи"/>
+      <p name="Президент" type="TEXT" value="Хасан Рухани"/>
+      <p name="Председатель Меджлиса Ирана" type="TEXT" value="Али Лариджани"/>
+      <p name="Госрелигия" type="TEXT" value="ислам шиитского толка"/>
+      <p name="Территория" type="INT" value="164"/>
+      <p name="Население" type="INT" value="78"/>
+      <p name="Плотность нас." type="INT" value="42"/>
+      <p name="ВВП" type="INT" value="17"/>
+      <p name="ИЧР" type="REAL" value="0,742"/>
+      <p name="Названия жителей" type="TEXT" value="ира́нец, ира́нка, ира́нцы"/>
+      <p name="Валюта" type="TEXT" value="Иранский риал"/>
+      <p name="Интернет-домены" type="TEXT" value=".ir"/>
+      <p name="Код ISO" type="TEXT" value="IR"/>
+      <p name="Код МОК" type="TEXT" value="IRI"/>
+      <p name="Телефонный код" type="TEXT" value="+98"/>
+      <p name="Часовые пояса" type="TEXT" value="+3:30 (летом — UTC+4:30), IRST"/>
+      <p name="Девиз" type="TEXT" value=" «Независимость, Свобода, Исламская республика»«اﺳﺘﻘﻼﻝ، ﺁﺯﺍﺩﻯ ا، جمهوری اسلامی» «Эстекля́ль, азади́, джомхури́йе эслами́»"/>
+      <p name="Гимн" type="TEXT" value=" «سرود ملی اﻳﺭﺍﻥ» «Сору́де мелли́йе Ира́н»"/>
+    </obj>
+    <obj name="Латвийская Республика">
+      <p name="Дата независимости" type="TEXT" value="18.11.1918"/>
+      <p name="Официальный язык" type="TEXT" value="латышский"/>
+      <p name="Столица" type="TEXT" value="Рига"/>
+      <p name="Крупнейшие города" type="TEXT" value="Рига, Даугавпилс, Лиепая, Елгава, Юрмала, Вентспилс"/>
+      <p name="Форма правления" type="TEXT" value="парламентская республика"/>
+      <p name="Президент" type="TEXT" value="Раймондс Вейонис"/>
+      <p name="Премьер-министр" type="TEXT" value="Марис Кучинскис"/>
+      <p name="Территория" type="INT" value="6"/>
+      <p name="Население" type="INT" value="1"/>
+      <p name="Плотность нас." type="INT" value="30"/>
+      <p name="ВВП" type="INT" value="24"/>
+      <p name="ИЧР" type="REAL" value="0,819"/>
+      <p name="Названия жителей" type="TEXT" value="латви́ец, латви́йка, латви́йцы"/>
+      <p name="Валюта" type="TEXT" value="евро"/>
+      <p name="Интернет-домен" type="TEXT" value=".lv, .eu"/>
+      <p name="Код ISO" type="TEXT" value="LV"/>
+      <p name="Код МОК" type="TEXT" value="LAT"/>
+      <p name="Телефонный код" type="TEXT" value="+371"/>
+      <p name="Часовые пояса" type="TEXT" value="EET (UTC+2, летом UTC+3)"/>
+      <p name="Гимн" type="TEXT" value=" «Dievs, Svētī Latviju (Боже, благослови Латвию)»"/>
+    </obj>
+    <obj name="Литовская Республика">
+      <p name="Дата независимости" type="TEXT" value="16.02.1918"/>
+      <p name="Официальный язык" type="TEXT" value="литовский"/>
+      <p name="Столица" type="TEXT" value="Вильнюс"/>
+      <p name="Крупнейшие города" type="TEXT" value="Вильнюс, Каунас, Клайпеда"/>
+      <p name="Форма правления" type="TEXT" value="Парламентско-президентская республика"/>
+      <p name="Президент" type="TEXT" value="Даля Грибаускайте"/>
+      <p name="Премьер-министр" type="TEXT" value="Альгирдас Буткявичюс"/>
+      <p name="Территория" type="INT" value="6"/>
+      <p name="Население" type="INT" value="2"/>
+      <p name="Плотность нас." type="INT" value="49"/>
+      <p name="ВВП" type="INT" value="22"/>
+      <p name="ИЧР" type="REAL" value="0,834"/>
+      <p name="Названия жителей" type="TEXT" value="литовцы, литовец, литовка"/>
+      <p name="Валюта" type="TEXT" value="евро"/>
+      <p name="Интернет-домен" type="TEXT" value=".lt, .eu"/>
+      <p name="Код ISO" type="TEXT" value="LT"/>
+      <p name="Код МОК" type="TEXT" value="LTU"/>
+      <p name="Телефонный код" type="TEXT" value="+370"/>
+      <p name="Часовые пояса" type="TEXT" value="EET (UTC+2, летом UTC+3)"/>
+      <p name="Гимн" type="TEXT" value=" «Tautiška giesmė»"/>
+    </obj>
+    <obj name="Королевство Норвегия">
+      <p name="Дата независимости" type="TEXT" value="07.06.1905"/>
+      <p name="Официальные языки" type="TEXT" value="норвежский (букмол и нюнорск) на местном уровне — саамский"/>
+      <p name="Столица" type="TEXT" value="Осло"/>
+      <p name="Крупнейшие города" type="TEXT" value="Осло, Берген, Тронхейм, Ставангер"/>
+      <p name="Форма правления" type="TEXT" value="Конституционная монархия"/>
+      <p name="Король" type="TEXT" value="Харальд V"/>
+      <p name="Премьер-министр" type="TEXT" value="Эрна Сульберг"/>
+      <p name="Территория" type="INT" value="38"/>
+      <p name="Население" type="INT" value="5"/>
+      <p name="Плотность нас." type="INT" value="13"/>
+      <p name="ИЧР" type="REAL" value="0,944"/>
+      <p name="Названия жителей" type="TEXT" value="норвежец, норвежка, норвежцы"/>
+      <p name="Валюта" type="TEXT" value="Норвежская крона"/>
+      <p name="Интернет-домен" type="TEXT" value=".no"/>
+      <p name="Код ISO" type="TEXT" value="NO"/>
+      <p name="Код МОК" type="TEXT" value="NOR"/>
+      <p name="Телефонный код" type="TEXT" value="+47"/>
+      <p name="Часовые пояса" type="TEXT" value="UTC+1"/>
+      <p name="Гимн" type="TEXT" value=" «Ja, vi elsker dette landet (Да, мы любим этот край)»"/>
+    </obj>
+
+    <obj name="Республика Польша">
+      <p name="Дата независимости" type="TEXT" value="11.11.1918"/>
+      <p name="Официальный язык" type="TEXT" value="польский"/>
+      <p name="Столица" type="TEXT" value="Варшава"/>
+      <p name="Крупнейшие города" type="TEXT" value="Варшава, Краков, Лодзь, Вроцлав, Познань, Гданьск"/>
+      <p name="Форма правления" type="TEXT" value="парламентская республика"/>
+      <p name="Территория" type="INT" value="31"/>
+      <p name="Население" type="INT" value="38"/>
+      <p name="Плотность нас." type="INT" value="123"/>
+      <p name="ВВП" type="INT" value="26"/>
+      <p name="ИЧР" type="REAL" value="0,843"/>
+      <p name="Названия жителей" type="TEXT" value="поляк, полька, поляки"/>
+      <p name="Валюта" type="TEXT" value="польский злотый"/>
+      <p name="Интернет-домен" type="TEXT" value=".pl"/>
+      <p name="Код ISO" type="TEXT" value="PL"/>
+      <p name="Код МОК" type="TEXT" value="POL"/>
+      <p name="Телефонный код" type="TEXT" value="+48"/>
+      <p name="Часовые пояса" type="TEXT" value="CET (UTC+1, летом UTC+2)"/>
+      <p name="Гимн" type="TEXT" value=" «Мазурка Домбровского»"/>
+    </obj><obj name="Россия">
+      <p name="Официальный язык" type="TEXT" value="русский"/>
+      <p name="Столица" type="TEXT" value="Москва"/>
+      <p name="Крупнейшие города" type="TEXT" value="Москва, Санкт-Петербург, Новосибирск, Екатеринбург, Нижний Новгород, Казань, Челябинск, Самара, Омск, Ростов-на-Дону, Уфа, Красноярск, Пермь, Воронеж, Волгоград"/>
+      <p name="Форма правления" type="TEXT" value="президентско-парламентская республика"/>
+      <p name="Госрелигия" type="TEXT" value="светское государство"/>
+      <p name="Территория" type="INT" value="1712"/>
+      <p name="Население" type="INT" value="146"/>
+      <p name="Плотность нас." type="INT" value="8"/>
+      <p name="ВВП" type="INT" value="25"/>
+      <p name="ИЧР" type="REAL" value="0,798"/>
+      <p name="Названия жителей" type="TEXT" value="россия́не, россия́нин, россия́нка"/>
+      <p name="Валюта" type="TEXT" value="российский рубль"/>
+      <p name="Интернет-домены" type="TEXT" value=".ru, .su, .рф"/>
+      <p name="Код ISO" type="TEXT" value="RU"/>
+      <p name="Код МОК" type="TEXT" value="RUS"/>
+      <p name="Телефонный код" type="TEXT" value="+7"/>
+      <p name="Часовые пояса" type="TEXT" value="+2…+12 (всего 11 часовых поясов)"/>
+    </obj>
+    <obj name="Королевство Швеция">
+      <p name="Официальный язык" type="TEXT" value="шведский"/>
+      <p name="Столица" type="TEXT" value="Стокгольм"/>
+      <p name="Крупнейшие города" type="TEXT" value="Стокгольм, Гётеборг, Мальмё, Уппсала"/>
+      <p name="Форма правления" type="TEXT" value="парламентская демократия и конституционная монархия"/>
+      <p name="Король" type="TEXT" value="Карл XVI Густав"/>
+      <p name="Премьер-министр" type="TEXT" value="Стефан Лёвен"/>
+      <p name="Территория" type="INT" value="44"/>
+      <p name="Население" type="INT" value="9"/>
+      <p name="Плотность нас." type="INT" value="21"/>
+      <p name="ВВП" type="INT" value="40"/>
+      <p name="ИЧР" type="REAL" value="0,898"/>
+      <p name="Названия жителей" type="TEXT" value="Швед, Шведка, Шведы"/>
+      <p name="Валюта" type="TEXT" value="Шведская крона"/>
+      <p name="Интернет-домены" type="TEXT" value=".se"/>
+      <p name="Код ISO" type="TEXT" value="SE"/>
+      <p name="Код МОК" type="TEXT" value="SWE"/>
+      <p name="Телефонный код" type="TEXT" value="+46"/>
+      <p name="Часовые пояса" type="TEXT" value="CET (UTC+1, летом UTC+2)"/>
+      <p name="Девиз" type="TEXT" value="«För Sverige i tiden» — «За Швецию — во все времена!»"/>
+      <p name="Гимн" type="TEXT" value=" «Du gamla, Du fria»"/>
+    </obj>
+
+    <obj name="Турецкая Республика">
+      <p name="Официальный язык" type="TEXT" value="турецкий"/>
+      <p name="Столица" type="TEXT" value="Анкара"/>
+      <p name="Крупнейшие города" type="TEXT" value="Стамбул, Анкара, Измир, Бурса, Адана, Анталья, Конья"/>
+      <p name="Форма правления" type="TEXT" value="парламентско-президентская республика"/>
+      <p name="Президент" type="TEXT" value="Реджеп Тайип Эрдоган"/>
+      <p name="Премьер-министр" type="TEXT" value="Бинали Йылдырым"/>
+      <p name="Госрелигия" type="TEXT" value="светское государство"/>
+      <p name="Территория" type="INT" value="78"/>
+      <p name="Население" type="INT" value="79"/>
+      <p name="Плотность нас." type="INT" value="97"/>
+      <p name="ИЧР" type="REAL" value="0,722"/>
+      <p name="Названия жителей" type="TEXT" value="турки, турок, турчанка"/>
+      <p name="Валюта" type="TEXT" value="турецкая лира"/>
+      <p name="Интернет-домены" type="TEXT" value=".tr"/>
+      <p name="Код ISO" type="TEXT" value="TR"/>
+      <p name="Код МОК" type="TEXT" value="TUR"/>
+      <p name="Телефонный код" type="TEXT" value="+90"/>
+      <p name="Часовые пояса" type="TEXT" value="UTC+3"/>
+      <p name="Девиз" type="TEXT" value=" «Yurtta Barış, Dünyada Barış («Мир в стране, мир во всём мире»)»"/>
+      <p name="Гимн" type="TEXT" value=" «İstiklâl Marşı»"/>
+    </obj>
+    <obj name="Украина">
+      <p name="Официальный язык" type="TEXT" value="украинский"/>
+      <p name="Столица" type="TEXT" value=" Киев"/>
+      <p name="Крупнейшие города" type="TEXT" value="Киев, Харьков, Одесса, Днепр, Донецк, Запорожье, Львов, Кривой Рог"/>
+      <p name="Форма правления" type="TEXT" value="парламентско-президентская республика"/>
+      <p name="Госрелигия" type="TEXT" value="светское государство"/>
+      <p name="Территория" type="INT" value="60"/>
+      <p name="Население" type="INT" value="42"/>
+      <p name="Плотность нас." type="INT" value="73"/>
+      <p name="ВВП" type="INT" value="8"/>
+      <p name="ИЧР" type="REAL" value="0,747"/>
+      <p name="Названия жителей" type="TEXT" value="украи́нец, украи́нка, украи́нцы"/>
+      <p name="Валюта" type="TEXT" value="гривна"/>
+      <p name="Интернет-домены" type="TEXT" value=".ua, .укр"/>
+      <p name="Код ISO" type="TEXT" value="UA"/>
+      <p name="Код МОК" type="TEXT" value="UKR"/>
+      <p name="Телефонный код" type="TEXT" value="+380"/>
+      <p name="Часовые пояса" type="TEXT" value="UTC+2UTC+3 (летнее время; также де-факто постоянное время в Крыму)"/>
+      <p name="Гимн" type="TEXT" value=" «Ще не вмерла України і слава, і воля»"/>
+    </obj>
+    <obj name="Соединённые Штаты Америки">
+      <p name="Дата независимости" type="TEXT" value="04.07.1776"/>
+      <p name="Официальный язык" type="TEXT" value="американский английский (де-факто)"/>
+      <p name="Столица" type="TEXT" value=" Вашингтон"/>
+      <p name="Крупнейшие города" type="TEXT" value="Нью-Йорк, Лос-Анджелес, Чикаго, Майами, Хьюстон, Филадельфия, Бостон, Сиэтл, Сан-Франциско, Сан-Антонио, Сан-Диего, Лас-Вегас, Атланта, Новый Орлеан, Финикс, Даллас"/>
+      <p name="Форма правления" type="TEXT" value="президентская республика"/>
+      <p name="Президент" type="TEXT" value="Барак Хусейн Обама II"/>
+      <p name="Вице-президент" type="TEXT" value="Джозеф Робинетт Байден"/>
+      <p name="Временный президент Сената" type="TEXT" value="Оррин Грант Хэтч"/>
+      <p name="Спикер Палаты представителей" type="TEXT" value="Пол Дэвис Райан"/>
+      <p name="Председатель Верховного суда" type="TEXT" value="Джон Гловер Робертс"/>
+      <p name="Госрелигия" type="TEXT" value="светское государство"/>
+      <p name="Территория" type="INT" value="951"/>
+      <p name="Население" type="INT" value="325"/>
+      <p name="Плотность нас." type="INT" value="32"/>
+      <p name="ВВП" type="INT" value="49"/>
+      <p name="ИЧР" type="REAL" value="0,914"/>
+      <p name="Названия жителей" type="TEXT" value="американец, американка, американцы"/>
+      <p name="Валюта" type="TEXT" value="доллар США"/>
+      <p name="Интернет-домены" type="TEXT" value=".us, .mil, .gov"/>
+      <p name="Код ISO" type="TEXT" value="US"/>
+      <p name="Код МОК" type="TEXT" value="USA"/>
+      <p name="Телефонный код" type="TEXT" value="+1"/>
+      <p name="Часовые пояса" type="TEXT" value="−5…−10"/>
+      <p name="Девиз" type="TEXT" value=" «In God We Trust» (с 1956)«На Бога уповаем» «E Pluribus Unum» (традиционный)«Из многих — единое»"/>
+      <p name="Гимн" type="TEXT" value=" «The Star-Spangled Banner»"/>
+    </obj>
+  </obj>
+</obj>
