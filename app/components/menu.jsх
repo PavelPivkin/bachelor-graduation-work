@@ -1,0 +1,20 @@
+var React = require('react');
+
+class MenuItem extends React.Component {
+	getInititalState () {
+		header: "Пункт меню"
+	},
+	render () {
+		return <li>{this.props.header}</li>;
+	}
+}
+
+class Menu extends React.Component {
+	render () {
+		return <div/>;
+	}
+}
+
+module.exports = {
+	Menu: Menu
+}
