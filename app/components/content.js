@@ -13,6 +13,7 @@ class Content extends React.Component {
 	render() {
 		return (
 			<div className='main'>
+
 			  	    <Panel header="Title">
 				      	{ this.props.activeKey == 0 && <MainPage /> }
 					  	{ this.props.activeKey == 1 && <Network /> }
