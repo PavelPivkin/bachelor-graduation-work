@@ -1,5 +1,5 @@
 import React from 'react';
-import { ListGroup, ListGroupItem } from 'react-bootstrap';
+import { ListGroup, ListGroupItem, Button } from 'react-bootstrap';
 
 class ObjectList extends React.Component {
 		constructor (props) {
@@ -8,14 +8,6 @@ class ObjectList extends React.Component {
 			objectList: [],
 		}
 	}
-
-	
-	componentWillReceiveProps (nextProps) {
-		this.setState ({
-			objectList: this.makeList(nextProps.objects)
-		})
-	}
-	
 
 	getChildren (parent) {
 		if ("obj" in parent) {
@@ -33,28 +25,30 @@ class ObjectList extends React.Component {
 		}
 	}
 
-	makeList (objectList) {
-		let Items = objectList.map((obj, index) => 
-			<ListGroupItem active={this.props.activeMap.has(obj.name)} key={index.toString()} onClick={this.handleItemSelected} href='#' >
-				<div onClick={this.props.onItemSelected} id={obj.name}>{ obj.name }</div>
-				{ 	
-					this.hasChildren(obj) && 	
-					<button 
-						id={obj.name} 
-						className="button-to-child" 
-						onClick={this.props.onItemButtonClick}> > 
-					</button> 
-				}
-			</ListGroupItem>
-		);
-		return Items;
-	}
-
 	render() {		
-		return ( 					
-				<ListGroup>
-					{ this.state.objectList }
-				</ListGroup>
+		return ( 
+				<div className="panel panel-default data-objects">
+				  	<div className="panel-heading">Объекты</div>
+				  	<div className="panel-body panel_height__inherit">
+				  		<Button bsStyle="primary" onClick={this.props.onBackButtonClick}>назад</Button>
+						<ListGroup className="data-list">
+							{ this.props.objects.map((obj, index) => 
+								<ListGroupItem  active={this.props.selectedObjects.includes(obj.name)} key={index.toString()} href='#' >
+									<input id={obj.name} onChange={this.props.onItemSelected}  type="checkbox"/><label>{ obj.name }</label>
+									{ 	
+										this.hasChildren(obj) && 	
+										<button 
+											id={obj.name} 
+											className="button-to-child" 
+											onClick={this.props.onItemButtonClick}> 
+											открыть 
+										</button> 
+									}	
+								</ListGroupItem>
+							)}
+						</ListGroup>
+				  	</div>
+				</div>		
 		);
 	}
 }

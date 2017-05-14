@@ -1,6 +1,7 @@
 import React from 'react';
 import { ListGroup, ListGroupItem } from 'react-bootstrap';
 import ObjectList from './object-list';
+import ParameterList from './parameter-list';
  
 class DataController extends React.Component {
 		constructor (props) {
@@ -89,25 +90,18 @@ class DataController extends React.Component {
 	render() {	
 		return ( 
 			<div className='data-controller'>
-				<div className="data-list data-objects">
-					<button onClick={this.handleBackButtonClick}>назад</button>
-					<h4>Объекты</h4>
-					<ObjectList 
-						objects={this.state.objects} 
-						onItemButtonClick={this.handleButtonClick} 
-						onItemSelected={this.handleObjectSelected}
-					/>
-
-				</div>
-
-				<div className='data-list data-properties'>
-				<h4>Параметры сравнения</h4>
-					<ObjectList 
-						objects={this.state.params} 
-						onItemSelected={this.handleParameterSelected}
-					/> 
-				</div>
-				
+				<ObjectList 
+					objects={this.state.objects} 
+					onBackButtonClick = {this.handleBackButtonClick}
+					onItemButtonClick={this.handleButtonClick} 
+					onItemSelected={this.handleObjectSelected}
+					selectedObjects={this.props.selectedObjects}
+				/>
+				<ParameterList 
+					parameters={this.state.params} 
+					onItemSelected={this.handleParameterSelected}
+					selectedParameters={this.props.selectedParameters}
+				/> 
 			</div>
 		);
 	}

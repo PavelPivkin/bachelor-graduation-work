@@ -10,7 +10,7 @@ class Network extends React.Component {
 
 	render() {
 		return (
-		  	<h1>Network</h1>
+		  	<div>Семантическая сеть</div>
 		);
 	}
 }

@@ -10,7 +10,7 @@ class MainPage extends React.Component {
 
 	render() {
 		return (
-		  	<div>MainPage</div>
+		  	<div>Справочная информация по программе</div>
 		);
 	}
 }

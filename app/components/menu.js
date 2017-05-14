@@ -3,10 +3,10 @@ import  { Nav, NavItem } from 'react-bootstrap';
 
 
 const MenuHeaders = [
-	"Главное меню",
-	"Представление семантической сети",
-	"Представление текстового отчета",
-	"Представление графического отчета"
+	"Справка",
+	"Cемантической сеть",
+	"Текстовый отчет",
+	"Графического отчет"
 ]
 
 class Menu extends React.Component {
@@ -26,8 +26,8 @@ class Menu extends React.Component {
 
 	render () {
 		return (
-			<div className="menu menu_float__left">
-				<Nav bsStyle="pills" activeKey={this.state.activeKey} >
+			<div className="menu ">
+				<Nav className="menu-nav" bsStyle="pills" activeKey={this.state.activeKey} >
 					{ 	
 						MenuHeaders.map((header, index) => 
 							<NavItem 

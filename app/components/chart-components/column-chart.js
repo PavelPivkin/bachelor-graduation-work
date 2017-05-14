@@ -9,6 +9,7 @@ class ColumnChart extends React.Component {
 		this.state =  {
 			labels:[],
 			data:[],
+			dataMap: new Map(),
 			backgroundColor: [],
 			borderColor: [],
 			selectedParameter:  undefined,
@@ -20,67 +21,84 @@ class ColumnChart extends React.Component {
 	}
 
 	handleObjectSelected (e, objects) {
-		let obj = objects.find((obj) => obj.name == e.target.id ? true : false);
-		if (obj != undefined) {
-			this.state.labels.push(obj.name);
-			
-			if ("p" in obj && this.state.selectedParameter != undefined) {
-					let param = obj.p.find((param) => param.name == this.state.selectedParameter ? true : false);
-					this.state.data.push(param.value);						
+		if (this.state.dataMap.has(e.target.id)) {
+			this.state.dataMap.delete(e.target.id);
+		} else {
+			let obj = objects.find((obj) => obj.name == e.target.id ? true : false);
+			if (obj != undefined) {
+				this.state.dataMap.set(obj.name, undefined);
+				if ("p" in obj && this.state.selectedParameter !== undefined) {
+						let param = obj.p.find((param) => param.name == this.state.selectedParameter ? true : false);
+						this.state.dataMap.set(obj.name, param.value);
+				}	
 			}	
 		}
 		this.setState({});
-		
-		
 	}
 
 	handleParameterSelected(e, objects) {
-		let _data = []
-		this.state.labels.forEach(function(objName, index) {
-			let obj = objects.find((obj) => obj.name == objName ? true : false);
-			if ("p" in obj ) {
-					let param = obj.p.find((param) => param.name == e.target.id ? true : false);
-					_data.push(param.value);
+		let _dataMap = new Map();
+		if (this.state.selectedParameter == undefined || this.state.selectedParameter != e.target.id) {
+			this.state.dataMap.forEach(function(paramValue, objName) {
+				let obj = objects.find((obj) => obj.name == objName ? true : false);
+				if ("p" in obj ) {
+						let param = obj.p.find((param) => param.name == e.target.id ? true : false);
+						_dataMap.set(objName, param.value);
+				}
+			});
 						
-			}
-		});
-		this.setState({
-			data:_data,
-			selectedParameter: e.target.id
-		})
+			this.setState({
+				selectedParameter: e.target.id,
+				dataMap: _dataMap
+			})
+
+		} else {
+			this.state.dataMap.forEach(function (paramValue, objName) {
+				_dataMap.set(objName, undefined);
+			})
+			this.setState({
+				selectedParameter: undefined,
+				dataMap: _dataMap
+			})
+		}
+
 	}
 
 	handleBackButtonClicked(e) {
 		this.setState({
-			data: [],
-			labels: [],
+			dataMap: new Map()
 		})
 	}
 
 	handleNextButtonClicked(e) {
 		this.setState({
-			data: [],
-			labels: [],
+			dataMap: new Map()
 		})
 	}
 
 	makeData() {
+		let _labels = [];
+		let _data = [];
+		this.state.dataMap.forEach(function(paramValue, objName) {
+			_labels.push(objName);
+			_data.push(paramValue);
+		})
 		let data = {
-			    labels: this.state.labels,
+			    labels: _labels,
 			    datasets: [
 			        {
 			            label: this.state.selectedParameter,
 			            backgroundColor: this.state.backgroundColor,
 			            borderColor: this.state.borderColor,
 			            borderWidth: 1,
-			            data: this.state.data,
+			            data: _data,
 			        }
 			    ]
 			}
 		return data;
 	}
 
-	setDataColor() {
+	setDataColor () {
 		let _backgroundColor = [];
 		for (let i = 0; i < this.state.labels.length; i++) {
 			_backgroundColor.push(randomColor({format: 'rgba', alpha: 0.2}));
@@ -92,6 +110,14 @@ class ColumnChart extends React.Component {
 		this.state.borderColor = _borderColor;
 	}
 
+	getSelectedObjects () {
+		let _labels = [];
+		this.state.dataMap.forEach(function(paramValue, objName) {
+			_labels.push(objName);
+		})
+		return _labels;
+	}
+
 	render() {
 		this.setDataColor();
 		return <div>
@@ -100,6 +126,8 @@ class ColumnChart extends React.Component {
 						onParameterSelected={this.handleParameterSelected}
 						onBackButtonClicked={this.handleBackButtonClicked}
 						onNextButtonClicked={this.handleNextButtonClicked}
+						selectedObjects={this.getSelectedObjects()}
+						selectedParameters={[this.state.selectedParameter]}
 					/>
 					<Bar data={this.makeData()} />
 				</div> 
