@@ -1,5 +1,5 @@
 import React from 'react';
-import {Radar} from "react-chartjs";
+import {Radar} from "react-chartjs-2";
 import DataController from "./data-controller/data-controller";
 
 class RadarChart extends React.Component {

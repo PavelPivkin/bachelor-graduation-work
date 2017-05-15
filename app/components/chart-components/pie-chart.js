@@ -1,5 +1,5 @@
 import React from 'react';
-import {Pie} from 'react-chartjs';
+import {Pie} from 'react-chartjs-2';
 import DataController from "./data-controller/data-controller";
 import { randomColor } from "randomcolor";
 
