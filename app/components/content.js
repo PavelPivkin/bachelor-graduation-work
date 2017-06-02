@@ -14,11 +14,9 @@ class Content extends React.Component {
 		return (
 			<div className='main'>
 
-			  	    <Panel header="Нормативно справочная информация (ВПО)">
-				      	{ this.props.activeKey == 0 && <MainPage /> }
-					  	{ this.props.activeKey == 1 && <Network /> }
-					  	{ this.props.activeKey == 2 && <Report /> }
-					  	{ this.props.activeKey == 3 && <Chart /> }
+			  	    <Panel header="Нормативно справочная информация (ВПО)">					  	
+					  	{ this.props.activeKey == 0 && <Report /> }
+					  	{ this.props.activeKey == 1 && <Chart /> }
 				    </Panel>
 		  	</div>
 		);
