@@ -47,11 +47,33 @@ class DataController extends React.Component {
 		return array;
 	}
 
+	getNumericParams (objectList) {
+		let set = new Set();
+		objectList.forEach((obj) => {
+			if ("p" in obj) {
+				obj.p.forEach((param) => {
+					if (!isNaN(param.value) && isFinite(param.value)) {
+						set.add(param.name);
+					}
+				});
+			}
+		});
+
+		let array = [];
+		set.forEach(v => array.push({name: v}));
+		console.log(array);
+		return array;
+	}
+
 	handleButtonClick (e) {
 		let _object = this.state.objects.find((obj) => obj.name == e.target.id ? true : false);
 		let _children = this.getChildren(_object);
-
-		let _params = this.getParams(_children);
+		let _params = []
+		if (this.props.numericParametersOnly == true) {
+			_params = this.getNumericParams(_children);
+		} else {
+			_params = this.getParams(_children);
+		}
 
 		let _stack = this.state.objectStack;
 		_stack.push(this.state.objects);
@@ -76,7 +98,12 @@ class DataController extends React.Component {
 	handleBackButtonClick (e) {
 		let _stack = this.state.objectStack;
 		let _objects = _stack.pop();
-		let _params = this.getParams(_objects);
+		let _params = [];
+		if (this.props.numericParametersOnly == true) {
+			_params = this.getNumericParams(_objects);
+		} else {
+			_params = this.getParams(_objects);
+		}
 		if (_objects != undefined) {
 			this.setState({
 				objects: _objects,

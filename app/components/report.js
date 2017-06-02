@@ -67,6 +67,9 @@ class Report extends React.Component {
                 let obj = _objects.find((obj) => obj.name == label ? true : false);
                 if (obj != undefined && 'p' in obj) {
                     let param = obj.p.find((param) => param.name == selectedParam ? true : false);
+                    if(param == undefined) {
+                        param = {value: "Нет данных"};
+                    }
                     _data.push(param.value);
                 }
             });

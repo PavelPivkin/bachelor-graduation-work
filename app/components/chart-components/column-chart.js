@@ -29,6 +29,9 @@ class ColumnChart extends React.Component {
 				this.state.dataMap.set(obj.name, undefined);
 				if ("p" in obj && this.state.selectedParameter !== undefined) {
 						let param = obj.p.find((param) => param.name == this.state.selectedParameter ? true : false);
+						if(param == undefined) {
+							param = {value: undefined};
+						}
 						this.state.dataMap.set(obj.name, param.value);
 				}	
 			}	
@@ -43,6 +46,9 @@ class ColumnChart extends React.Component {
 				let obj = objects.find((obj) => obj.name == objName ? true : false);
 				if ("p" in obj ) {
 						let param = obj.p.find((param) => param.name == e.target.id ? true : false);
+						if(param == undefined) {
+							param = {value: undefined};
+						}
 						_dataMap.set(objName, param.value);
 				}
 			});
@@ -83,13 +89,15 @@ class ColumnChart extends React.Component {
 			_labels.push(objName);
 			_data.push(paramValue);
 		})
+		let _backgroundColor = this.getBackgroundColor();
+		let _borderColor = this.getBorderColor(_backgroundColor);
 		let data = {
 			    labels: _labels,
 			    datasets: [
 			        {
 			            label: this.state.selectedParameter,
-			            backgroundColor: this.state.backgroundColor,
-			            borderColor: this.state.borderColor,
+			            backgroundColor: _backgroundColor,
+			            borderColor: _borderColor,
 			            borderWidth: 1,
 			            data: _data,
 			        }
@@ -98,16 +106,16 @@ class ColumnChart extends React.Component {
 		return data;
 	}
 
-	setDataColor () {
-		let _backgroundColor = [];
-		for (let i = 0; i < this.state.labels.length; i++) {
-			_backgroundColor.push(randomColor({format: 'rgba', alpha: 0.2}));
-			this.state.backgroundColor = _backgroundColor;
-		}
-		let _borderColor = this.state.backgroundColor.map((obj) => 
+	getBackgroundColor() {
+		let _backgroundColor = randomColor({format: 'rgba', alpha: 0.2, count: this.state.dataMap.size});
+		return _backgroundColor;
+	}
+
+	getBorderColor(backgroundColor) {
+		let _borderColor = backgroundColor.map((obj) => 
 			obj.replace("0.2", "1")
 		)
-		this.state.borderColor = _borderColor;
+		return _borderColor;
 	}
 
 	getSelectedObjects () {
@@ -119,7 +127,7 @@ class ColumnChart extends React.Component {
 	}
 
 	render() {
-		this.setDataColor();
+
 		return <div>
 					<DataController 
 						onObjectSelected={this.handleObjectSelected} 
@@ -128,6 +136,7 @@ class ColumnChart extends React.Component {
 						onNextButtonClicked={this.handleNextButtonClicked}
 						selectedObjects={this.getSelectedObjects()}
 						selectedParameters={[this.state.selectedParameter]}
+						numericParametersOnly={true}
 					/>
 					<Bar data={this.makeData()} />
 				</div> 

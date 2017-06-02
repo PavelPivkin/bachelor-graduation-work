@@ -1,6 +1,7 @@
 import React from 'react';
 import {Radar} from "react-chartjs-2";
 import DataController from "./data-controller/data-controller";
+import { randomColor } from "randomcolor";
 
 class RadarChart extends React.Component {
 	constructor (props) {
@@ -67,18 +68,22 @@ class RadarChart extends React.Component {
                 let obj = _objects.find((obj) => obj.name == label ? true : false);
                 if (obj != undefined && 'p' in obj) {
                     let param = obj.p.find((param) => param.name == selectedParam ? true : false);
+                    if(param == undefined) {
+                            param = {value: undefined};
+                        }
                     _data.push(param.value);
                 }
             });
-            
+            let _backgroundColor = randomColor({ format: 'rgba', alpha: 0.2 });
+            let _borderColor = _backgroundColor.replace("0.2", "1")
             _datasets.push({
                 label: selectedParam,
-                backgroundColor: "rgba(179,181,198,0.2)",
-                borderColor: "rgba(179,181,198,1)",
-                pointBackgroundColor: "rgba(179,181,198,1)",
+                backgroundColor: _backgroundColor,
+                borderColor: _borderColor,
+                pointBackgroundColor: _borderColor,
                 pointBorderColor: "#fff",
                 pointHoverBackgroundColor: "#fff",
-                pointHoverBorderColor: "rgba(179,181,198,1)",
+                pointHoverBorderColor: _borderColor,
                 data: _data
             })            
         });
@@ -103,6 +108,7 @@ class RadarChart extends React.Component {
                         onNextButtonClicked={this.handleNextButtonClicked}
                         selectedObjects={this.state.labels}
                         selectedParameters={this.state.selectedParameters}
+                        numericParametersOnly={true}
                     />
                     <Radar data={this.makeData()} />
                 </div> 

@@ -75,6 +75,14 @@ var countriesData = [{
                         value: "ARM"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+374"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "UTC+4"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Наше Отечество»"
                     }
@@ -150,6 +158,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "AZE"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+994"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "+4"
                     },
                     {
                         name: "Девиз",
@@ -233,6 +249,14 @@ var countriesData = [{
                         value: "BLR"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+375"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "UTC+03:00"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Мы, белорусы»"
                     }
@@ -300,6 +324,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "GBR"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+44"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "UTC±00:00"
                     },
                     {
                         name: "Девиз",
@@ -377,6 +409,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "CAN"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+1"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "−3:30 — −8"
                     },
                     {
                         name: "Девиз",
@@ -460,6 +500,14 @@ var countriesData = [{
                         value: "CZE"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+420"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "CET (UTC+1, летом UTC+2)"
+                    },
+                    {
                         name: "Девиз",
                         value: "«Pravda vítězí» —«Истина торжествует»"
                     },
@@ -541,6 +589,14 @@ var countriesData = [{
                         value: "DEN"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+45"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "CET (UTC+1, летом UTC+2)"
+                    },
+                    {
                         name: "Девиз",
                         value: "«Guds hjælp, Folkets kærlighed, Danmarks styrke[1]»«Помощь Господа, любовь народа, сила Дании»"
                     },
@@ -608,6 +664,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "EST"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+372"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "EET (UTC+2, летом — UTC+3)"
                     },
                     {
                         name: "Гимн",
@@ -695,6 +759,14 @@ var countriesData = [{
                         value: "FIN"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+358"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "EET (UTC+2, летом — UTC+3)"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Maamme / Vårt land»"
                     }
@@ -772,6 +844,14 @@ var countriesData = [{
                         value: "FRA"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+33"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "CET (UTC+1, летом UTC+2)"
+                    },
+                    {
                         name: "Девиз",
                         value: "«Liberté, Égalité, Fraternité (Свобода, Равенство, Братство)»"
                     },
@@ -839,6 +919,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "GER"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+49"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "CET (UTC+1, летом UTC+2)"
                     },
                     {
                         name: "Девиз",
@@ -926,6 +1014,14 @@ var countriesData = [{
                         value: "IRI"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+98"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "+3:30 (летом — UTC+4:30), IRST"
+                    },
+                    {
                         name: "Девиз",
                         value: "«Независимость, Свобода, Исламская республика»«اﺳﺘﻘﻼﻝ، ﺁﺯﺍﺩﻯ ا، جمهوری اسلامی» «Эстекля́ль, азади́, джомхури́йе эслами́»"
                     },
@@ -1007,6 +1103,14 @@ var countriesData = [{
                         value: "LAT"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+371"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "EET (UTC+2, летом UTC+3)"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Dievs, Svētī Latviju (Боже, благослови Латвию)»"
                     }
@@ -1084,6 +1188,14 @@ var countriesData = [{
                         value: "LTU"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+370"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "EET (UTC+2, летом UTC+3)"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Tautiška giesmė»"
                     }
@@ -1157,6 +1269,14 @@ var countriesData = [{
                         value: "NOR"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+47"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "UTC+1"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Ja, vi elsker dette landet (Да, мы любим этот край)»"
                     }
@@ -1226,6 +1346,14 @@ var countriesData = [{
                         value: "POL"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+48"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "CET (UTC+1, летом UTC+2)"
+                    },
+                    {
                         name: "Гимн",
                         value: "«Мазурка Домбровского»"
                     }
@@ -1293,6 +1421,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "RUS"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+7"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "+2…+12 (всего 11 часовых поясов)"
                     }
                 ]
             },
@@ -1362,6 +1498,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "SWE"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+46"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "CET (UTC+1, летом UTC+2)"
                     },
                     {
                         name: "Девиз",
@@ -1441,6 +1585,14 @@ var countriesData = [{
                         value: "TUR"
                     },
                     {
+                        name: "Телефонный код",
+                        value: "+90"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "UTC+3"
+                    },
+                    {
                         name: "Девиз",
                         value: "«Yurtta Barış, Dünyada Barış («Мир в стране, мир во всём мире»)»"
                     },
@@ -1512,6 +1664,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "UKR"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+380"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "UTC+2UTC+3 (летнее время; также де-факто постоянное время в Крыму)"
                     },
                     {
                         name: "Гимн",
@@ -1605,6 +1765,14 @@ var countriesData = [{
                     {
                         name: "Код МОК",
                         value: "USA"
+                    },
+                    {
+                        name: "Телефонный код",
+                        value: "+1"
+                    },
+                    {
+                        name: "Часовые пояса",
+                        value: "−5…−10"
                     },
                     {
                         name: "Девиз",

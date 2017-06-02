@@ -1,6 +1,9 @@
+const path = require('path');
+
 var HTMLWebpackPlugin = require('html-webpack-plugin');
+
 var HTMLWebpackPluginConfig = new HTMLWebpackPlugin({
-	template: __dirname + '/index.html',
+	template: __dirname + '/app/index.html',
 	filename: 'index.html',
 	inject: 'body'
 });
@@ -18,7 +21,7 @@ module.exports = {
 	},
 	output: {
 		filename: 'transformed.js',
-		path: __dirname + '/build'
+		path:  __dirname + '/build'
 	},
 	devServer: {
 		disableHostCheck:true

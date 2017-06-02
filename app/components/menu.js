@@ -4,7 +4,7 @@ import  { Nav, NavItem } from 'react-bootstrap';
 
 const MenuHeaders = [
 	"Справка",
-	"Cемантической сеть",
+	"Cемантическая сеть",
 	"Текстовый отчет",
 	"Графического отчет"
 ]

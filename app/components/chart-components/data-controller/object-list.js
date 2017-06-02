@@ -33,7 +33,7 @@ class ObjectList extends React.Component {
 				  		<Button bsStyle="primary" onClick={this.props.onBackButtonClick}>назад</Button>
 						<ListGroup className="data-list">
 							{ this.props.objects.map((obj, index) => 
-								<ListGroupItem  active={this.props.selectedObjects.includes(obj.name)} key={index.toString()} href='#' >
+								<ListGroupItem  active={this.props.selectedObjects.includes(obj.name)} key={obj.name} href='#' >
 									<input id={obj.name} onChange={this.props.onItemSelected}  type="checkbox"/><label>{ obj.name }</label>
 									{ 	
 										this.hasChildren(obj) && 	

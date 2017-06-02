@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "start": "webpack-dev-server --port 8090"
+    "start": "webpack-dev-server --host 0.0.0.0"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "chart.js": "^2.5.0",
+    "randomcolor": "^0.5.2",
     "react": "^15.5.4",
     "react-bootstrap": "^0.31.0",
     "react-chartjs-2": "^2.0.5",

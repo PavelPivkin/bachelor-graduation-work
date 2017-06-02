@@ -24,6 +24,9 @@ class PieChart extends React.Component {
                 this.state.dataMap.set(obj.name, undefined);
                 if ("p" in obj && this.state.selectedParameter !== undefined) {
                         let param = obj.p.find((param) => param.name == this.state.selectedParameter ? true : false);
+                        if(param == undefined) {
+                            param = {value: undefined};
+                        }
                         this.state.dataMap.set(obj.name, param.value);
                 }   
             }   
@@ -38,6 +41,9 @@ class PieChart extends React.Component {
                 let obj = objects.find((obj) => obj.name == objName ? true : false);
                 if ("p" in obj ) {
                         let param = obj.p.find((param) => param.name == e.target.id ? true : false);
+                        if(param == undefined) {
+                            param = {value: undefined};
+                        }
                         _dataMap.set(objName, param.value);
                 }
             });
@@ -78,36 +84,22 @@ class PieChart extends React.Component {
             _labels.push(objName);
             _data.push(paramValue);
         })
+        let _backgroundColor = this.getBackgroundColor();
         let data = {
                 labels: _labels,
                 datasets: [
                     {
                         data: _data,
-                        backgroundColor: [
-                            "#FF6384",
-                            "#36A2EB",
-                            "#FFCE56"
-                        ],
-                        hoverBackgroundColor: [
-                            "#FF6384",
-                            "#36A2EB",
-                            "#FFCE56"
-                        ]
+                        backgroundColor: _backgroundColor,
+                        hoverBackgroundColor: _backgroundColor
                     }]
-};
+        };
         return data;
     }
 
-    setDataColor () {
-        let _backgroundColor = [];
-        for (let i = 0; i < this.state.labels.length; i++) {
-            _backgroundColor.push(randomColor({format: 'rgba', alpha: 0.2}));
-            this.state.backgroundColor = _backgroundColor;
-        }
-        let _borderColor = this.state.backgroundColor.map((obj) => 
-            obj.replace("0.2", "1")
-        )
-        this.state.borderColor = _borderColor;
+    getBackgroundColor() {
+        let _backgroundColor = randomColor({luminosity:'dark', format: 'rgba', alpha: 0.2, count: this.state.dataMap.size});
+        return _backgroundColor;
     }
 
     getSelectedObjects () {
@@ -129,6 +121,7 @@ class PieChart extends React.Component {
                     onNextButtonClicked={this.handleNextButtonClicked}
                     selectedObjects={this.getSelectedObjects()}
                     selectedParameters={[this.state.selectedParameter]}
+                    numericParametersOnly={true}
                 />
 			     <Pie data={this.makeData()} />
             </div>

@@ -15,7 +15,7 @@ class ParameterList extends React.Component {
 				<div className="panel panel-default data-properties">
 				  	<div className="panel-heading">Критерии</div>
 				  	<div className="panel-body panel_height__inherit">
-						<ListGroup className="data-list">
+						<ListGroup className="data-list data-list-properties">
 							{ 
 								this.props.parameters.map((obj, index) => 
 									<ListGroupItem 
